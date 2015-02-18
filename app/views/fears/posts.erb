@@ -1,0 +1,9 @@
+<h1></h1>
+
+<h3>Here are all your peers' fears:</h3>
+<ul>
+  <% @posts.each do |post| %>
+    <a href="/posts/<%= post.id %>"><li><%= post.title %></li></a>
+    <p> <%= post.user.name %> </p>
+  <% end %>
+</ul>

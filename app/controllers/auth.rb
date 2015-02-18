@@ -21,6 +21,18 @@ get '/signup' do
   erb :'auth/signup'
 end
 
+post '/signup' do
+  user = User.new(params[:user])
+
+  if user.save
+    session[:user_id] = user.id
+    redirect '/home'
+  else
+    # display errors to user
+    redirect '/signup'
+  end
+end
+
 get '/logout' do
   session[:user_id] = nil
   redirect '/'

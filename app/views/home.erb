@@ -1,1 +1,16 @@
-<h1>Welcome <% User.name %>!</h1>
+<h1>Welcome <%= @user.name %>!</h1>
+
+<h3>HERE ARE ALL YOUR PEERS' FEARS:</h3>
+
+<div id="posts">
+
+<ul>
+<% @posts.each do |post| %>
+  <a href="/posts/"><li> <%= post.title %></li></a>
+  <p> <%= post.user.name %> </p>
+<% end %>
+</ul>
+
+<div class="button"><a href="/new">ADD A NEW FEAR</a></div>
+
+</div>

@@ -4,5 +4,6 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.belongs_to :user
+    end
   end
 end

@@ -11,25 +11,49 @@ h1  {
     text-align: center;
     font-size: 160px;
 }
-#cover  {
+h3 {
+    font-family: 'Bebas Neue';
     font-weight: 100;
-    font-family: 'Helvetica Neue';
+    color: #ecf0f1;
     text-align: center;
-    font-size:  24px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.cover  {
+    font-weight: 100;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-size:  18px;
     color: #fff;
-    letter-spacing: 20px;
+    letter-spacing: 5px;
 }
 .form {
     font-weight: 100;
-    font-weight: 'Helvetica Neue';
+    font-family: 'Bebas Neue';
     text-align: center;
+}
+
+.button {
+    font-weight: 100;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.account {
+    font-weight: 300;
+    font-family: 'Muli';
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
 }
 #login-toolbar {
     text-align: right;
     padding: 20px;
-    font-weight: 300;
-    font-family: 'Roboto';
-    letter-spacing: 5px;
+    font-weight: 100;
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    letter-spacing: 3px;
 }
 
 a {
@@ -37,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: #bdc3c7;
+    color: #7f8c8d;
 }
 
 a:visited {
